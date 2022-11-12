@@ -112,6 +112,7 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			_input.interact = false;
 			JumpAndGravity();
 			GroundedCheck();
 			Move();

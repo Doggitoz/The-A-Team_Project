@@ -4,7 +4,7 @@ using UnityEngine;
 
 [System.Serializable] public class Dialogue
 {
-    public GameObject Character;
+    public GameObject Focus;
     public string Name;
     public string Text;
 }
