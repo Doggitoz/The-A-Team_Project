@@ -19,7 +19,6 @@ using TMPro;
 using static UnityEngine.Debug;
 using StarterAssets;
 
-
 public class DialogueReader : MonoBehaviour
 {
     //Inspector variables
@@ -94,6 +93,15 @@ public class DialogueReader : MonoBehaviour
         dialoguesIndex++;
         timeSinceStartedReading = 0;
         completedCurrentDialogue = false;
+        //int lastAudioIndex = audioIndex;
+
+        ////Randomize the audio clip used for talking
+        //while (audioIndex != lastAudioIndex && voiceAudios.Length > 0)
+        //{
+        //    audioIndex = Random.Range(0, voiceAudios.Length);
+        //}
+        //audioSource.clip = voiceAudios[audioIndex];
+
         if (dialoguesIndex >= dialogues.Length)
         {
             dialoguesIndex = 0;
@@ -105,6 +113,7 @@ public class DialogueReader : MonoBehaviour
                 dialogues = null;
             }
         }
+
     }
 
     public void StartDialogue()
@@ -112,6 +121,8 @@ public class DialogueReader : MonoBehaviour
         isPlayingDialogue = true;
         DialogueCanvas.enabled = true;
         PlayerInputComponent.enabled = false;
+
+        // THIS IS REALLY DUMB PROBABLY IDK
         if (FreezesGame)
             Time.timeScale = 0;
     }
