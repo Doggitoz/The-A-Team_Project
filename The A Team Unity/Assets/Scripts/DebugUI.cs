@@ -9,12 +9,17 @@ public class DebugUI : MonoBehaviour
 {
     public AudioClip MusicOne;
     public AudioClip MusicTwo;
-    public AudioManager AudioManager;
+    public AudioManager AM;
     public Canvas DebugCanvas;
     public PlayerInput PlayerInputComponent;
 
 
     bool isOpen = false;
+
+    private void Awake()
+    {
+        AM = AudioManager.AM;
+    }
 
     private void Update()
     {
@@ -22,16 +27,17 @@ public class DebugUI : MonoBehaviour
         {
             ToggleMenu();
         }
+        Debug.Log(AM.GetGlobalMusicVolume());
     }
 
     public void StartMusicOne()
     {
-        AudioManager.PlayMusic(MusicOne);
+        AM.PlayMusic(MusicOne);
     }
 
     public void StartMusicTwo()
     {
-        AudioManager.PlayMusic(MusicTwo);
+        AM.PlayMusic(MusicTwo);
     }
 
     public void ToggleMenu()
@@ -54,13 +60,12 @@ public class DebugUI : MonoBehaviour
 
     public void MasterVolSlider(float f)
     {
-        Debug.Log("Float: " + f);
-        AudioManager.SetMasterVolume(f);
+        AM.SetMasterVolume(f);
     }
 
     public void MusicVolSlider(float f)
     {
-        AudioManager.SetMusicVolume(f);
+        AM.SetMusicVolume(f);
     }
 
 }
