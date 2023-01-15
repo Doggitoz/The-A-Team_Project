@@ -2,6 +2,7 @@
  * TODO:
  * 
  * Multiple dialogue instances on one object --DOESN'T SEEM TO WORK. WILL NEED TO PROVIDE MULTIPLE DIALOGUE TRIGGERS IT SEEMS
+ * THIS MIGHT WORK IF YOU REMOVE OR REORDER COMPONENTS
  * 
  * Potentially incorporate moving the players camera to an object of choice (NEED TO LEARN HOW CINEMACHINE WORKS FIRST)
  * 

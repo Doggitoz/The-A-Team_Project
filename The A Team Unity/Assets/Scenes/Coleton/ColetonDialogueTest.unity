@@ -1228,7 +1228,7 @@ PrefabInstance:
     - target: {fileID: 3214250766176654610, guid: d6740e683a79cd54b99fad7aa2abf3b0,
         type: 3}
       propertyPath: dialogues.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3214250766176654610, guid: d6740e683a79cd54b99fad7aa2abf3b0,
         type: 3}
@@ -1239,6 +1239,16 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogues.Array.data[0].Text
       value: Dialogue example
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214250766176654610, guid: d6740e683a79cd54b99fad7aa2abf3b0,
+        type: 3}
+      propertyPath: dialogues.Array.data[1].Name
+      value: Bob
+      objectReference: {fileID: 0}
+    - target: {fileID: 3214250766176654610, guid: d6740e683a79cd54b99fad7aa2abf3b0,
+        type: 3}
+      propertyPath: dialogues.Array.data[1].Text
+      value: i hate htis
       objectReference: {fileID: 0}
     - target: {fileID: 8217296797697383460, guid: d6740e683a79cd54b99fad7aa2abf3b0,
         type: 3}
